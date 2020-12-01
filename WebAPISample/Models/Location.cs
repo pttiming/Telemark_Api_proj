@@ -11,6 +11,9 @@ namespace WebAPISample.Models
     {
         [Key]
         public int Id { get; set; }
+        [ForeignKey("Race")]
+        public int race_id { get; set; }
+        public Race Race { get; set; }
         [Display(Name = "Name")]
         public string LocationtName { get; set; }
         [Display(Name = "Address")]
@@ -25,5 +28,9 @@ namespace WebAPISample.Models
         public decimal Latitude { get; set; }
         [Column(TypeName = "decimal(11, 8)")]
         public decimal Longitude { get; set; }
+        public string Keyword { get; set; }
+        public string Description { get; set; }
+
+
     }
 }

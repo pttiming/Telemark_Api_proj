@@ -12,5 +12,6 @@ namespace WebAPISample.Data
         }
 
         public DbSet<SmsMessage> Messages { get; set; }
+        public DbSet<Race> Races { get; set; }
     }
 }
