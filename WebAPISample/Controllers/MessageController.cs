@@ -70,11 +70,49 @@ namespace WebAPISample.Controllers
             _context.SaveChanges();
         }
 
-        public string GetRaceInfo(int raceId)
+        public string GetRaceInfo(string keyword)
         {
-            string response = "";
-            response = _context.Races.Where(r => r.id == raceId).Select(r => r.description).FirstOrDefault();
+            string response;
             return response;
+        }
+
+        public string GetParticipantInfo(int id)
+        {
+            string response;
+            return response;
+        }
+
+        public string SubscribeToAlerts()
+        {
+            string response;
+            return response;
+        }
+
+        public bool CheckForTextUser()
+        {
+            if()
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public void CreateTextUser()
+        {
+
+        }
+
+        public void SetPreviousUserAction()
+        {
+
+        }
+
+        public void SubscribeForPushResult()
+        {
+
         }
 
         public string ConvertPhoneNumber(string number)
